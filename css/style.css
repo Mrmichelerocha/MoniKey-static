@@ -14,14 +14,6 @@
     z-index: 99;
 }
 
-.back-to-tag {
-    position: fixed;
-    display: none;
-    right: 30px;
-    bottom: 30px;
-    z-index: 99;
-}
-
 .my-6 {
     margin-top: 6rem;
     margin-bottom: 6rem;
@@ -197,9 +189,9 @@
 }
 
 .page-header {
-    padding-top: 12rem;
-    padding-bottom: 6rem;
-    background: url(../img/carousel-1.jpg) top right no-repeat;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    background: #ffc107 top right no-repeat;
     background-size: cover;
 }
 
