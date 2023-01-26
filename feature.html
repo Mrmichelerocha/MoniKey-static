@@ -96,6 +96,23 @@
     </div>
     <!-- Page Header End -->
 
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
 
        <!-- Feature Start -->
        <div class="container-fluid my-5">
@@ -147,7 +164,13 @@
                         <p><i class="fa fa-check text-primary me-3"></i>Tudo fica mais Facil</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Você fica mais Conectado</p>
                         <p><i class="fa fa-check text-primary me-3"></i>E ainda mostra seu Estilo</p>
-                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">link video demostrativo</a>
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                            <button type="button" class="btn-play" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                            Play Video
+                        </div>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                         <!-- <div class="about-img position-relative overflow-hidden p-5 pe-0"> -->
@@ -227,6 +250,10 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
