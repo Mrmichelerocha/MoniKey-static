@@ -104,30 +104,6 @@
                         <div class="carousel-item active">
                             <img class="w-100 h-100" src="img/fuck_rosa.jpeg" alt="Image">
                         </div>
-                        <div class="carousel-item">
-                            <img class="w-100 h-100" src="img/simpson_rosa.jpeg" alt="Image">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100 h-100" src="img/flash_rosa.jpeg" alt="Image">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100 h-100" src="img/rick_rosa.jpeg" alt="Image">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100 h-100" src="img/astro_rosa.jpeg" alt="Image">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100 h-100" src="img/clancy_rosa.jpeg" alt="Image">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100 h-100" src="img/arminha_rosa.jpeg" alt="Image">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100 h-100" src="img/groot_rosa.jpeg" alt="Image">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100 h-100" src="img/fodase_rosa.jpeg" alt="Image">
-                        </div>
                     </div>
                     <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
                         <i class="fa fa-2x fa-angle-left text-dark"></i>
@@ -138,8 +114,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-7 h-auto mb-30">
-                <div class="h-100 p-30">
+            <div class="col-lg-7 h-auto mb-30 container-fluid" id="portfolio">
+                <div class="container h-100 p-30">
                     <h3>Chaveiros NFC</h3>
                     <div class="d-flex mb-3">
                         <div class="text-primary mr-2">
@@ -152,49 +128,52 @@
                     </div>
                     <h3 class="font-weight-semi-bold mb-4">R$15.00</h3>
                     <p class="mb-4">Chaveiros personalizados com tecnologia de aproximação NFC</p>
-                    <div class="d-flex mb-3">
-                        <strong class="text-dark mr-3">Tipos:</strong>
-                        <form>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="size-1" name="size">
-                                <label class="custom-control-label" for="size-1">Mordecai</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="size-2" name="size">
-                                <label class="custom-control-label" for="size-2">Homer</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="size-3" name="size">
-                                <label class="custom-control-label" for="size-3">Flash Preguiça</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="size-4" name="size">
-                                <label class="custom-control-label" for="size-4">Rick</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="size-5" name="size">
-                                <label class="custom-control-label" for="size-5">Astronauta</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="size-4" name="size">
-                                <label class="custom-control-label" for="size-6">Clancy</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="size-7" name="size">
-                                <label class="custom-control-label" for="size-7">Gunner</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="size-8" name="size">
-                                <label class="custom-control-label" for="size-8">Baby Groot</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" class="custom-control-input" id="size-9" name="size">
-                                <label class="custom-control-label" for="size-9">Luvinha</label>
-                            </div>
-                        </form>
+                    <div class="row">
+                        <div class="col-12 text-left mb-2">
+                            <ul class="list-inline mb-4" id="portfolio-filters">
+                                <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
+                                <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">WhatsApp</li>
+                                <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Instagram</li>
+                                <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">LinkedIn</li>
+                                <li class="btn btn-sm btn-outline-primary m-1" data-filter=".fourth">Twitter</li>
+                                <li class="btn btn-sm btn-outline-primary m-1" data-filter=".fifth">Facebook</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="d-flex flex-column">
-                        <a href="#" class="btn btn-primary py-md-3 px-md-5 mt-2 rounded-pill">Comprar</a>
+                    <div class="row portfolio-container ">
+                        <div class="col-lg-6 col-md-6 mb-4 portfolio-item first">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <input class="rounded-pill" type="text" id="WhatsApp" name="WhatsApp" value="" placeholder="(48) 91234-5678">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-4 portfolio-item second">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <input class="rounded-pill" type="text" id="Instagram" name="Instagram" value="" placeholder="www.instagram.com/user">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-4 portfolio-item third">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <input class="rounded-pill" type="text" id="LinkedIn" name="LinkedIn" value="" placeholder="www.linkedin.com/user">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-4 portfolio-item fourth">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <input class="rounded-pill" type="text" id="Twitter" name="Twitter" value="" placeholder="www.twitter.com/user">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-4 portfolio-item fifth">
+                            <div class="position-relative overflow-hidden mb-2">
+                                <input class="rounded-pill" type="text" id="Facebook" name="Facebook" value="" placeholder="www.facebook.com/user">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-4 portfolio-item">
+                            <div class="hidden">
+                                <input type="text" id="Mordecai" value="Mordecai">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column">
+                        <a onclick="gotowhatsapp()" class="btn btn-primary py-md-3 px-md-5 mt-2 rounded-pill">Comprar</a>
                     </div>
                     <div class="d-flex pt-2">
                         <strong class="text-dark mr-2">Compartilhe no:</strong>
@@ -397,6 +376,30 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+    <!--Script WhatsApp-->
+    <script>
+        function gotowhatsapp(){
+            var whats = document.getElementById("WhatsApp").value;
+            var insta = document.getElementById("Instagram").value;
+            var linkedin = document.getElementById("LinkedIn").value;
+            var twitter = document.getElementById("Twitter").value;
+            var facebook = document.getElementById("Facebook").value;
+            var personagem = document.getElementById("Mordecai").value;
+
+            var url = 
+            "https://wa.me/551195571944?text=" +
+            "Quero comprar um chaveiro do(a): " +
+            personagem +
+            " com o link/número: " +
+            whats +
+            insta +
+            linkedin +
+            twitter +
+            facebook;
+
+            window.open(url, "_blank").focus();
+        }
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -406,6 +409,8 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
