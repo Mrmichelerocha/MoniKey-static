@@ -39,6 +39,7 @@
         layoutMode: 'fitRows'
     });
     $('#portfolio-filters li').on('click', function () {
+        
         $("#portfolio-filters li").removeClass('active');
         $(this).addClass('active');
 
